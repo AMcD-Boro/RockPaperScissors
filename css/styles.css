@@ -1,0 +1,132 @@
+:root{
+  --rock-pink: #E66280;
+  --paper-green: #ACE05C;
+  --scissors-gray: #C4C3EB;
+  --plum-purple: #8178A4;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 70%, rgba(238,238,238,1) 100%);
+}
+h1 {
+  color: var(--plum-purple);
+  font-weight: 600;
+  background-color: transparent;
+  text-shadow: 0px 1px 2px #888;
+  font-size: 2rem;
+}
+h2{
+  color: var(--scissors-gray);
+}
+p{
+  font-weight: 400;
+  margin-bottom: 0;
+}
+footer {
+  font-size: .65rem;
+  font-weight: 400;
+  color: #ccc;
+}
+footer a,
+footer a:visited {
+  color: var(--scissors-gray);
+}
+footer a:hover {
+  color: var(--rock-pink);
+}
+.score-label{
+  font-size: 1.35rem;
+}
+.points:first-of-type{
+  border: 1px solid red;
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+.icons {
+  -webkit-filter: drop-shadow(5px 5px 15px #ddd);
+  filter: drop-shadow(5px 5px 15px #ddd);
+}
+.bg-light {
+  box-shadow: 0px 1px 15px #ddd;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:visited,
+.navbar-light .navbar-nav .nav-link:focus {
+  font-size: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: var(--plum-purple);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--rock-pink);
+}
+#score-board {
+  color: #aaa;
+}
+#score-board h2 {
+  font-size: 3rem;
+  color: var(--plum-purple);
+}
+#score-board img {
+  width: 70%;
+}
+#playerScore {
+  border-right: 1px solid var(--plum-purple);
+}
+#compScore {
+  border-left: 1px solid var(--plum-purple);
+}
+#rock:hover h1,
+#paper:hover h1,
+#scissors:hover h1{
+  background-color: var(--rock-pink);
+  border-radius: 50px;
+  color: #fff;
+}
+#paper:hover h1 {
+  background-color: var(--paper-green);
+}
+
+#scissors:hover h1{
+  background-color: var(--scissors-gray);
+}
+#rulesModal ol li h5 {
+  padding-left: .5rem;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .score-label{
+    font-size: 1.75rem;
+  }
+  #score-board h2 {
+    font-size: 4rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+h1 {
+  font-size: 2.5rem;
+  }
+  footer {
+    font-size: .75rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+h1 {
+  font-size: 3rem;
+  }
+.score-label{
+  font-size: 1.25rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
