@@ -42,6 +42,24 @@ function getRandomChoice()
 // Comparing user vs comp choices
 function compareChoices()
 {
+  var compChoiceString;
+
+  switch (compChoice) {
+    case 0:
+      compChoiceString = "rock";
+      break;
+    case 1:
+      compChoiceString = "paper";
+      break;
+    case 2:
+      compChoiceString = "scissors";
+      break;
+    default:
+      compChoiceString = "";
+  }
+
+  document.getElementById('outcome').textContent = userChoice + " : " + compChoiceString;
+
   // switch statement for ALL possibilities
   switch (userChoice + compChoice)
   {
@@ -74,7 +92,7 @@ function displayResult()
   // get HTML element to display the text & assign resultMessage string
   document.getElementById("result").textContent = resultMessage;
   overlayOn();
-  setTimeout(overlayOff, 500);
+  setTimeout(overlayOff, 1500);
 }
 
 // Update Score

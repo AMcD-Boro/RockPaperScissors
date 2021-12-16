@@ -112,7 +112,7 @@ filter:brightness(0) invert(1) drop-shadow(0px 0px 5px var(--rock-pink));
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.75); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 /* Small devices (landscape phones, 576px and up) */
