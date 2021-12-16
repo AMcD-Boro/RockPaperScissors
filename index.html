@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div id="overlay">
+      <div class="row mt-5 text-center justify-content-center">
+        <div class="col-8 mt-5">
+          <h1 id="result"></h1>
+        </div>
+      </div>
+    </div><!-- Overylay div -->
         <!-- Header/Menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -27,7 +34,7 @@
               </ul>
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Reset Score</a>
+                  <a class="nav-link" href="#" id="reset">Reset Score</a>
                 </li>
               </ul>
             </div>
@@ -94,7 +101,7 @@
             <div class="row justify-content-end text-end">
               <div class="col-8 px-0 d-none d-lg-block">
                 <!-- Player icon -->
-                <img class="img-fluid" src="img/astronaut.png" alt="Player Icon">
+                <img id="astronaut" class="img-fluid" src="img/astronaut.png" alt="Player Icon">
               </div>
             </div>
             <div class="row text-end">
@@ -116,7 +123,7 @@
             <div class="row justify-content-start text-start">
               <div class="col-8 px-0 d-none d-lg-block">
                 <!-- Computer icon -->
-                <img class="img-fluid" src="img/mars-rover.png" alt="Computer Icon">
+                <img id="robot" class="img-fluid" src="img/mars-rover.png" alt="Computer Icon">
               </div>
             </div>
             <div class="row text-start">
@@ -127,11 +134,6 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <h1 id="result"></h1>
-          </div>
-        </div>
 
       <footer class="fixed-bottom px-3 py-1">
         <p>
