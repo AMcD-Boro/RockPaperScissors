@@ -118,7 +118,7 @@ filter:brightness(0) invert(1) drop-shadow(0px 0px 5px var(--rock-pink));
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .score-label{
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
   }
   #score-board h2 {
     font-size: 4rem;
