@@ -15,7 +15,7 @@ h1 {
   font-weight: 600;
   background-color: transparent;
   text-shadow: 0px 1px 2px #888;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 h2{
   color: var(--scissors-gray);
@@ -118,7 +118,7 @@ filter:brightness(0) invert(1) drop-shadow(0px 0px 5px var(--rock-pink));
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .score-label{
-    /* font-size: 1.75rem; */
+    font-size: 1.75rem;
   }
   #score-board h2 {
     font-size: 4rem;
